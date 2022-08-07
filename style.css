@@ -1,0 +1,159 @@
+@import 'img/bootstrap/bootstrap.min.css';
+
+#header{
+	background-color: #000000;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-img {
+    background-position: center center;
+    background-size: cover;
+}
+
+.bg-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-overlay:after {
+    position: absolute;  /*very important*/
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 8, 29, 0.6);
+    content: '';
+    top: 0;
+    left: 0;
+}
+
+
+/* Header Area CSS */
+
+#header-sticky-wrapper {
+    position: absolute;   /*Important*/
+    width: 100%;
+}
+
+.header_area {
+    background-color: transparent;
+    position: fixed;
+    width: 99%;
+    height: 100px;
+    z-index: 90;
+    top: 0;
+    left: 0;
+    padding: 0 60px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.1);
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.is-sticky .header_area {
+    background-color: rgba(4, 8, 29, 0.85); /*Background of header*/
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    border-bottom: 4px solid #ffffff; /*line under header*/
+}
+
+.header_area .navbar-brand { /*important for logo*/
+    /*padding: 0;
+    margin-right: 0;*/
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+
+    text-shadow: 6px 6px 6px #808080;
+}
+
+.header_area .navbar {
+    padding: 0;
+}
+
+/*Online Equivalence Application and Tracking System logo*/
+.navbar-expand-lg .navbar-nav .nav-link { /*important for home user contact*/
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px #808080;
+}
+
+
+
+/* hero area css */
+
+.fancy-hero-area {
+    position: relative; /*important*/
+    z-index: 10;
+    width: 100%;
+    height: 900px;
+}
+
+/*animation of image*/
+.animated-img { 
+    -webkit-animation: animated-image 10s ease infinite;
+    animation: animated-image 10s ease infinite;  /*important mouvement of image*/
+}
+
+@-webkit-keyframes animated-image {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 20%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes animated-image {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 20%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/*footer*/
+.footer-copywrite-area { /*Important footer*/
+    background-color: #04081d;
+    height: 50px;
+}
+
+.copywrite-text p {
+    margin: 0;
+}
+
+.copywrite-text p{
+    font-weight: 600;
+    color: #b5aec4;
+}
+
+/*.footer-nav ul li {
+    display: inline-block;
+    float: left;
+}*/
+
+.footer-nav ul li a { /*important admin in footer*/
+    font-size: 14px;
+    font-weight: 400;
+    color: #b5aec4;
+    display: block;
+    padding: 0 20px;
+}
